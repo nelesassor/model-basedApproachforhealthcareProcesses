@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vlzYwF6UEe2JR-fYhcAVnQ" name="DIGAPro1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_vneMsF6UEe2JR-fYhcAVnQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_K3To0KVnEe2EYtE_SD7mnw" name="akteure">
+    <packagedElement xmi:type="uml:Class" xmi:id="_wdOhQKVnEe2EYtE_SD7mnw" name="Akteur"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0D4e4KVnEe2EYtE_SD7mnw" name="Person" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1RUiYKVnEe2EYtE_SD7mnw" name="NonPerson" isAbstract="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4xHqEKVnEe2EYtE_SD7mnw" name="LE">
+      <generalization xmi:type="uml:Generalization" xmi:id="_9joicLghEe2ZiurUVz4WtA" general="_wdOhQKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5ukw0KVnEe2EYtE_SD7mnw" name="Arzt">
+      <generalization xmi:type="uml:Generalization" xmi:id="_qfS5YLgiEe2ZiurUVz4WtA" general="_ikqAMKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EE7goKVoEe2EYtE_SD7mnw" name="LENonPerson" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Yls2AKVoEe2EYtE_SD7mnw" general="_4xHqEKVnEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_Ck4OwLgiEe2ZiurUVz4WtA" general="_1RUiYKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FVIkQKVoEe2EYtE_SD7mnw" name="Psychotherapeut">
+      <generalization xmi:type="uml:Generalization" xmi:id="_oXCzcLgiEe2ZiurUVz4WtA" general="_ikqAMKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OI3DsKVoEe2EYtE_SD7mnw" name="Patient">
+      <generalization xmi:type="uml:Generalization" xmi:id="_TW9gQKVoEe2EYtE_SD7mnw" general="_0D4e4KVnEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_O2hcALghEe2ZiurUVz4WtA" general="_wdOhQKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PQVCEKVoEe2EYtE_SD7mnw" name="Angehörige">
+      <generalization xmi:type="uml:Generalization" xmi:id="_UCzSkKVoEe2EYtE_SD7mnw" general="_0D4e4KVnEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_NieaMLghEe2ZiurUVz4WtA" general="_wdOhQKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QZZi8KVoEe2EYtE_SD7mnw" name="PatientenVertreter">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Uu0EAKVoEe2EYtE_SD7mnw" general="_0D4e4KVnEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_MzChULghEe2ZiurUVz4WtA" general="_wdOhQKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_d0f2IKVoEe2EYtE_SD7mnw" name="LEPerson" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_hSj4cKVoEe2EYtE_SD7mnw" general="_4xHqEKVnEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_BEFKYLgiEe2ZiurUVz4WtA" general="_0D4e4KVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iIxuwKVoEe2EYtE_SD7mnw" name="Hausarzt">
+      <generalization xmi:type="uml:Generalization" xmi:id="_mmdbAKVoEe2EYtE_SD7mnw" general="_5ukw0KVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jcvRAKVoEe2EYtE_SD7mnw" name="Notarzt">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nQEYsKVoEe2EYtE_SD7mnw" general="_5ukw0KVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ikqAMKVtEe2EYtE_SD7mnw" name="ApprobierterHeilberufler" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_WwXQoLgiEe2ZiurUVz4WtA" general="_d0f2IKVoEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kvgsELgiEe2ZiurUVz4WtA" name="Apotheker">
+      <generalization xmi:type="uml:Generalization" xmi:id="_rcuK8LgiEe2ZiurUVz4WtA" general="_ikqAMKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wg0-ALgiEe2ZiurUVz4WtA" name="Facharzt">
+      <generalization xmi:type="uml:Generalization" xmi:id="_1TNH4LgiEe2ZiurUVz4WtA" general="_5ukw0KVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5np_oLgiEe2ZiurUVz4WtA" name="NichtApprobierterHeilberufler">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7PvXwLgiEe2ZiurUVz4WtA" general="_d0f2IKVoEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AdAG0LgjEe2ZiurUVz4WtA" name="AltenPfleger">
+      <generalization xmi:type="uml:Generalization" xmi:id="_YsdUcLgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_D--YwLgjEe2ZiurUVz4WtA" name="Diätassistent">
+      <generalization xmi:type="uml:Generalization" xmi:id="_a-7GULgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HCt2kLgjEe2ZiurUVz4WtA" name="GesundheitsUndKrankenpfleger">
+      <generalization xmi:type="uml:Generalization" xmi:id="_boJCcLgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MbiVYLgjEe2ZiurUVz4WtA" name="MedizinischeFachangestellte">
+      <generalization xmi:type="uml:Generalization" xmi:id="_de5vwLgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PP3eMLgjEe2ZiurUVz4WtA" name="Notfallsanitäter">
+      <generalization xmi:type="uml:Generalization" xmi:id="_evEXILgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RRxrkLgjEe2ZiurUVz4WtA" name="Diabetesberater">
+      <generalization xmi:type="uml:Generalization" xmi:id="_fgLrALgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UTHVoLgjEe2ZiurUVz4WtA" name="NäPaVERAH">
+      <generalization xmi:type="uml:Generalization" xmi:id="_j_KXwLgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XSyLwLgjEe2ZiurUVz4WtA" name="Heilmittelerbringer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_k6zgoLgjEe2ZiurUVz4WtA" general="_5np_oLgiEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mr0yULgjEe2ZiurUVz4WtA" name="Physiotherapeut">
+      <generalization xmi:type="uml:Generalization" xmi:id="_p3utoLgjEe2ZiurUVz4WtA" general="_XSyLwLgjEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_b4uxQLglEe2ZiurUVz4WtA" name="HilfsmittelHersteller">
+      <generalization xmi:type="uml:Generalization" xmi:id="_rkF24LglEe2ZiurUVz4WtA" general="_EE7goKVoEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gZlGQLglEe2ZiurUVz4WtA" name="DigaHersteller">
+      <generalization xmi:type="uml:Generalization" xmi:id="_q1j88LglEe2ZiurUVz4WtA" general="_EE7goKVoEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_imEL8LglEe2ZiurUVz4WtA" name="ImplantateHersteller">
+      <generalization xmi:type="uml:Generalization" xmi:id="_tYzVwLglEe2ZiurUVz4WtA" general="_EE7goKVoEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lcK2YLglEe2ZiurUVz4WtA" name="Labor">
+      <generalization xmi:type="uml:Generalization" xmi:id="_soprMLglEe2ZiurUVz4WtA" general="_EE7goKVoEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yQuG8LglEe2ZiurUVz4WtA" name="SOZV">
+      <generalization xmi:type="uml:Generalization" xmi:id="_5nL-MLglEe2ZiurUVz4WtA" general="_wdOhQKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9KcpkLglEe2ZiurUVz4WtA" name="GesetzlicheKrankenversicherung">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Fad_ALgmEe2ZiurUVz4WtA" general="_yQuG8LglEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__Ly2QLglEe2ZiurUVz4WtA" name="Pflegeversicherung">
+      <generalization xmi:type="uml:Generalization" xmi:id="_F41WALgmEe2ZiurUVz4WtA" general="_yQuG8LglEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AZOSsLgmEe2ZiurUVz4WtA" name="Rentenversicherung">
+      <generalization xmi:type="uml:Generalization" xmi:id="_GVdnoLgmEe2ZiurUVz4WtA" general="_yQuG8LglEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_C9zIQLgmEe2ZiurUVz4WtA" name="Unfallversicherung">
+      <generalization xmi:type="uml:Generalization" xmi:id="_G22dcLgmEe2ZiurUVz4WtA" general="_yQuG8LglEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SX6s4LgmEe2ZiurUVz4WtA" name="LEOrganistaion" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_WXzp4LgmEe2ZiurUVz4WtA" general="_4xHqEKVnEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dnF7ELgmEe2ZiurUVz4WtA" name="StationäreLEOrganisation" isAbstract="true">
+      <generalization xmi:type="uml:Generalization" xmi:id="_hf1uQLgmEe2ZiurUVz4WtA" general="_SX6s4LgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lSSsMLgmEe2ZiurUVz4WtA" name="Krankenhaus">
+      <generalization xmi:type="uml:Generalization" xmi:id="_t1dnILgmEe2ZiurUVz4WtA" general="_dnF7ELgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nRC34LgmEe2ZiurUVz4WtA" name="StationärePflege">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uk6HELgmEe2ZiurUVz4WtA" general="_dnF7ELgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qjccwLgmEe2ZiurUVz4WtA" name="StationäreReha">
+      <generalization xmi:type="uml:Generalization" xmi:id="_vHwVcLgmEe2ZiurUVz4WtA" general="_dnF7ELgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0h9UULgmEe2ZiurUVz4WtA" name="AmbulanteLEOrganisation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_5Na94LgmEe2ZiurUVz4WtA" general="_SX6s4LgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7BmRQLgmEe2ZiurUVz4WtA" name="Notfallambulanz">
+      <generalization xmi:type="uml:Generalization" xmi:id="___ZA8LgmEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9OWcsLgmEe2ZiurUVz4WtA" name="Apotheke">
+      <generalization xmi:type="uml:Generalization" xmi:id="__U8VwLgmEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BQ0zoLgnEe2ZiurUVz4WtA" name="Rettungsdienst">
+      <generalization xmi:type="uml:Generalization" xmi:id="_CyOU8LgnEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FYgasLgnEe2ZiurUVz4WtA" name="TelemedizinischesZentrum">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Hqu8ALgnEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JUP3gLgnEe2ZiurUVz4WtA" name="KassenärztlicherBereitschaftsdienst">
+      <generalization xmi:type="uml:Generalization" xmi:id="_NNvRkLgnEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PuvOsLgnEe2ZiurUVz4WtA" name="AmbulanterPflegedienst">
+      <generalization xmi:type="uml:Generalization" xmi:id="_SSlEcLgnEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TJpPULgnEe2ZiurUVz4WtA" name="MVZ">
+      <generalization xmi:type="uml:Generalization" xmi:id="_UyVrcLgnEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WtxdYLgnEe2ZiurUVz4WtA" name="Arztpraxis">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ZlnNMLgnEe2ZiurUVz4WtA" general="_0h9UULgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_beW3gLgnEe2ZiurUVz4WtA" name="VorOrtApotheke">
+      <generalization xmi:type="uml:Generalization" xmi:id="_gpxzgLgnEe2ZiurUVz4WtA" general="_9OWcsLgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cBs1ILgnEe2ZiurUVz4WtA" name="OnlineApotheke">
+      <generalization xmi:type="uml:Generalization" xmi:id="_hXbjsLgnEe2ZiurUVz4WtA" general="_9OWcsLgmEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hePRgO45Ee28LJQ8R6nH3g" name="Dienste">
+      <generalization xmi:type="uml:Generalization" xmi:id="_tb7LgO45Ee28LJQ8R6nH3g" general="_pnLukO45Ee28LJQ8R6nH3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jHfuUO45Ee28LJQ8R6nH3g" name="Geräte">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uIOQ0O45Ee28LJQ8R6nH3g" general="_ql4ygO45Ee28LJQ8R6nH3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kpo2gO45Ee28LJQ8R6nH3g" name="Sensor">
+      <generalization xmi:type="uml:Generalization" xmi:id="_mD0VgO45Ee28LJQ8R6nH3g" general="_jHfuUO45Ee28LJQ8R6nH3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pnLukO45Ee28LJQ8R6nH3g" name="Software"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ql4ygO45Ee28LJQ8R6nH3g" name="Hardware"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rujDsO45Ee28LJQ8R6nH3g" name="App">
+      <generalization xmi:type="uml:Generalization" xmi:id="_szn1YO45Ee28LJQ8R6nH3g" general="_pnLukO45Ee28LJQ8R6nH3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HaHy4O46Ee28LJQ8R6nH3g" name="Managementsoftware">
+      <generalization xmi:type="uml:Generalization" xmi:id="_I-Op8O46Ee28LJQ8R6nH3g" general="_pnLukO45Ee28LJQ8R6nH3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_WvgogO46Ee28LJQ8R6nH3g" name="FollowApp"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jUmgwO46Ee28LJQ8R6nH3g" name="Cloud">
+      <generalization xmi:type="uml:Generalization" xmi:id="_kr9VQO46Ee28LJQ8R6nH3g" general="_pnLukO45Ee28LJQ8R6nH3g"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_hB2YYKVnEe2EYtE_SD7mnw" name="aufgabe">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2GEKUKVtEe2EYtE_SD7mnw" name="Aufgabe"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8UCvgKVtEe2EYtE_SD7mnw" name="Manuell"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Dwoc4KVuEe2EYtE_SD7mnw" name="Oeffnen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_poHxAKVvEe2EYtE_SD7mnw" general="_pB-zgKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_F6tHwKVuEe2EYtE_SD7mnw" name="Ablesen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_qU0e8KVvEe2EYtE_SD7mnw" general="_pB-zgKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HTDawKVuEe2EYtE_SD7mnw" name="Eingeben">
+      <generalization xmi:type="uml:Generalization" xmi:id="_q_DHsKVvEe2EYtE_SD7mnw" general="_pB-zgKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QP7PIKVuEe2EYtE_SD7mnw" name="Einstellen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_s60Q0KVvEe2EYtE_SD7mnw" general="_HTDawKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_S0uHIKVuEe2EYtE_SD7mnw" name="Dosieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_u6pakKVvEe2EYtE_SD7mnw" general="_QP7PIKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Wylq4KVuEe2EYtE_SD7mnw" name="Dokuementieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uAdqQKVvEe2EYtE_SD7mnw" general="_HTDawKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a5kuYKVuEe2EYtE_SD7mnw" name="ManuelleAufgabe">
+      <generalization xmi:type="uml:Generalization" xmi:id="_dPk8cKVuEe2EYtE_SD7mnw" general="_2GEKUKVtEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_eIYMsKVuEe2EYtE_SD7mnw" general="_8UCvgKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_l7I-YKVuEe2EYtE_SD7mnw" name="Interaktion"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pB-zgKVuEe2EYtE_SD7mnw" name="ManuelleInteraktion">
+      <generalization xmi:type="uml:Generalization" xmi:id="_rJbBIKVuEe2EYtE_SD7mnw" general="_a5kuYKVuEe2EYtE_SD7mnw"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_r1fc8KVuEe2EYtE_SD7mnw" general="_l7I-YKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vOQvkKVuEe2EYtE_SD7mnw" name="Anzeigen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_8bVYYKVvEe2EYtE_SD7mnw" general="_3FOPUKVvEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yPLi4KVuEe2EYtE_SD7mnw" name="Auswerten">
+      <generalization xmi:type="uml:Generalization" xmi:id="_8-28MKVvEe2EYtE_SD7mnw" general="_3FOPUKVvEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5CbYUKVuEe2EYtE_SD7mnw" name="Speichern">
+      <generalization xmi:type="uml:Generalization" xmi:id="_-SDCYKVvEe2EYtE_SD7mnw" general="_3FOPUKVvEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MDhDoKVvEe2EYtE_SD7mnw" name="Aufbereiten">
+      <generalization xmi:type="uml:Generalization" xmi:id="_9oDDIKVvEe2EYtE_SD7mnw" general="_3FOPUKVvEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_YAYeQKVvEe2EYtE_SD7mnw" name="Annehmen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_sTt0kKVvEe2EYtE_SD7mnw" general="_HTDawKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZY2tEKVvEe2EYtE_SD7mnw" name="Ablehnen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_rqLvYKVvEe2EYtE_SD7mnw" general="_HTDawKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iuBFoKVvEe2EYtE_SD7mnw" name="Anmelden">
+      <generalization xmi:type="uml:Generalization" xmi:id="_n-IUYKVvEe2EYtE_SD7mnw" general="_pB-zgKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3FOPUKVvEe2EYtE_SD7mnw" name="Verarbeiteung">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6J9LoKVvEe2EYtE_SD7mnw" general="_2GEKUKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lzR0cMiwEe23GaPM8t9ccA" name="Validieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nx6rYMiwEe23GaPM8t9ccA" general="_3FOPUKVvEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_E7SOQMixEe23GaPM8t9ccA" name="Messen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_GWx74MixEe23GaPM8t9ccA" general="_2GEKUKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nGAVsMiyEe23GaPM8t9ccA" name="Applizieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_te048MiyEe23GaPM8t9ccA" general="_a5kuYKVuEe2EYtE_SD7mnw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CURL4Mi1Ee23GaPM8t9ccA" name="Initialisieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_FjEqMMi1Ee23GaPM8t9ccA" general="_2GEKUKVtEe2EYtE_SD7mnw"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mX0XgKVnEe2EYtE_SD7mnw" name="daten">
+    <packagedElement xmi:type="uml:Class" xmi:id="_G8Ah0KVwEe2EYtE_SD7mnw" name="Daten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Osy9kKVwEe2EYtE_SD7mnw" name="Messdaten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QnIjUKVwEe2EYtE_SD7mnw" name="Code"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_alzL4KVwEe2EYtE_SD7mnw" name="Einstellung"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_crfGAKVwEe2EYtE_SD7mnw" name="Personendaten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gtm3oKVwEe2EYtE_SD7mnw" name="Einladung"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qzOcwKVwEe2EYtE_SD7mnw" name="Freigabe"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uH55kKVwEe2EYtE_SD7mnw" name="Datei"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ANBX0LgoEe2ZiurUVz4WtA" name="schritt">
+    <packagedElement xmi:type="uml:Class" xmi:id="_GJ0GYLgoEe2ZiurUVz4WtA" name="Anleiten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HNLn4LgoEe2ZiurUVz4WtA" name="Coachen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_JSdSULgoEe2ZiurUVz4WtA" general="_GJ0GYLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KXyisLgoEe2ZiurUVz4WtA" name="Aufnehmen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_M3am0LgoEe2ZiurUVz4WtA" name="AdministrativAufnehmen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Q4J4YLgoEe2ZiurUVz4WtA" general="_KXyisLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PIgfsLgoEe2ZiurUVz4WtA" name="MedizinischAufnehmen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_RjXYkLgoEe2ZiurUVz4WtA" general="_KXyisLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SyF1gLgoEe2ZiurUVz4WtA" name="Befähigen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VtYh8LgoEe2ZiurUVz4WtA" name="Beraten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XdJ2cLgoEe2ZiurUVz4WtA" name="Bewerten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZKQ4gLgoEe2ZiurUVz4WtA" name="DatenVerarbeiten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_b73dcLgoEe2ZiurUVz4WtA" name="DatenAustauschen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_1y33sLgoEe2ZiurUVz4WtA" general="_ZKQ4gLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_evh34LgoEe2ZiurUVz4WtA" name="DatenDarstellen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_2b4YcLgoEe2ZiurUVz4WtA" general="_ZKQ4gLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gya8sLgoEe2ZiurUVz4WtA" name="DatenErheben">
+      <generalization xmi:type="uml:Generalization" xmi:id="_36lLELgoEe2ZiurUVz4WtA" general="_ZKQ4gLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iwpj8LgoEe2ZiurUVz4WtA" name="DatenInterpretieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_4khf8LgoEe2ZiurUVz4WtA" general="_ZKQ4gLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_l1X5MLgoEe2ZiurUVz4WtA" name="DatenSpeichern">
+      <generalization xmi:type="uml:Generalization" xmi:id="_5LBfQLgoEe2ZiurUVz4WtA" general="_ZKQ4gLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ok8d0LgoEe2ZiurUVz4WtA" name="DatenVerwalten">
+      <generalization xmi:type="uml:Generalization" xmi:id="_50f6ELgoEe2ZiurUVz4WtA" general="_ZKQ4gLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tZMP8LgoEe2ZiurUVz4WtA" name="Diagnostizieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wf7-cLgoEe2ZiurUVz4WtA" name="Dokumentieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7xgZULgoEe2ZiurUVz4WtA" name="DokumentierenZuZweckenDesSGB">
+      <generalization xmi:type="uml:Generalization" xmi:id="_CCAuELgpEe2ZiurUVz4WtA" general="_wf7-cLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-t2OoLgoEe2ZiurUVz4WtA" name="Selbstdokumentation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_CrPRQLgpEe2ZiurUVz4WtA" general="_wf7-cLgoEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FrIw4LgpEe2ZiurUVz4WtA" name="Empfehlen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Hz7CULgpEe2ZiurUVz4WtA" name="Erinnern"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KfDy4LgpEe2ZiurUVz4WtA" name="Informieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MW-WwLgpEe2ZiurUVz4WtA" name="Intervenieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hNkVsLgqEe2ZiurUVz4WtA" name="Behandeln">
+      <generalization xmi:type="uml:Generalization" xmi:id="_zPS1wLgqEe2ZiurUVz4WtA" general="_MW-WwLgpEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ih8HoLgqEe2ZiurUVz4WtA" name="Operieren">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ru2jILgqEe2ZiurUVz4WtA" general="_hNkVsLgqEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_plbYgLgqEe2ZiurUVz4WtA" name="Physiotherapie">
+      <generalization xmi:type="uml:Generalization" xmi:id="_sIt0oLgqEe2ZiurUVz4WtA" general="_hNkVsLgqEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_t0k5gLgqEe2ZiurUVz4WtA" name="Rehabilitation">
+      <generalization xmi:type="uml:Generalization" xmi:id="_zxu0cLgqEe2ZiurUVz4WtA" general="_MW-WwLgpEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wdFM0LgqEe2ZiurUVz4WtA" name="Verordnen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_0qXFkLgqEe2ZiurUVz4WtA" general="_MW-WwLgpEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1_zOgLgqEe2ZiurUVz4WtA" name="Konsil"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4UdYwLgqEe2ZiurUVz4WtA" name="Messen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BCOaILgrEe2ZiurUVz4WtA" name="Pflegen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ETRUILgrEe2ZiurUVz4WtA" name="Planen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Gtpr4LgrEe2ZiurUVz4WtA" name="Schulen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KBSm4LgrEe2ZiurUVz4WtA" name="SichInformieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OAUBMLgrEe2ZiurUVz4WtA" name="ZweitmeinungEinholen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_PhJh0LgrEe2ZiurUVz4WtA" general="_KBSm4LgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SDFTELgrEe2ZiurUVz4WtA" name="Überwachen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_U_hPALgrEe2ZiurUVz4WtA" name="Überweisen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kHSfYLgrEe2ZiurUVz4WtA" name="AdministartivVerwalten"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oJ8cgLgrEe2ZiurUVz4WtA" name="Abrechnen">
+      <generalization xmi:type="uml:Generalization" xmi:id="_sFqEILgrEe2ZiurUVz4WtA" general="_kHSfYLgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_qEe2kLgrEe2ZiurUVz4WtA" name="Warnen"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_4ceP0LgrEe2ZiurUVz4WtA" name="kommunikation">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6w8z4LgrEe2ZiurUVz4WtA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9-g8ELgrEe2ZiurUVz4WtA" name="Kommunikationsweg"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BGHmMLgsEe2ZiurUVz4WtA" name="DirekterKontakt">
+      <generalization xmi:type="uml:Generalization" xmi:id="_pIItoLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_E53koLgsEe2ZiurUVz4WtA" name="Telefon">
+      <generalization xmi:type="uml:Generalization" xmi:id="_pxelkLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GIzc8LgsEe2ZiurUVz4WtA" name="Fax">
+      <generalization xmi:type="uml:Generalization" xmi:id="_qZBtwLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_IQOccLgsEe2ZiurUVz4WtA" name="Brief">
+      <generalization xmi:type="uml:Generalization" xmi:id="_raBQsLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Jx64sLgsEe2ZiurUVz4WtA" name="EMail">
+      <generalization xmi:type="uml:Generalization" xmi:id="_sUyP0LgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MTQNALgsEe2ZiurUVz4WtA" name="KVConnect">
+      <generalization xmi:type="uml:Generalization" xmi:id="_s7HQALgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Nu4dgLgsEe2ZiurUVz4WtA" name="VideoCall">
+      <generalization xmi:type="uml:Generalization" xmi:id="_teTcoLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PIRSULgsEe2ZiurUVz4WtA" name="KIM">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uFYqwLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Qnx9QLgsEe2ZiurUVz4WtA" name="TIM">
+      <generalization xmi:type="uml:Generalization" xmi:id="_uwKtILgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SUrj8LgsEe2ZiurUVz4WtA" name="ePA">
+      <generalization xmi:type="uml:Generalization" xmi:id="_vZhMILgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_T1CjcLgsEe2ZiurUVz4WtA" name="eRezeptFachdienst">
+      <generalization xmi:type="uml:Generalization" xmi:id="_wVH4wLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W1jHELgsEe2ZiurUVz4WtA" name="ElektronischeFallakte">
+      <generalization xmi:type="uml:Generalization" xmi:id="_xIWFcLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dIS3gLgsEe2ZiurUVz4WtA" name="ClinicalDataRepository">
+      <generalization xmi:type="uml:Generalization" xmi:id="_x9MCwLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fq264LgsEe2ZiurUVz4WtA" name="SonstigerDokumentenaustausch">
+      <generalization xmi:type="uml:Generalization" xmi:id="_zJuuYLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iFfKQLgsEe2ZiurUVz4WtA" name="DiGA">
+      <generalization xmi:type="uml:Generalization" xmi:id="_0Eo3cLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lN7h4LgsEe2ZiurUVz4WtA" name="WebPortal">
+      <generalization xmi:type="uml:Generalization" xmi:id="_1SyFkLgsEe2ZiurUVz4WtA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TouywMi0Ee23GaPM8t9ccA" name="BTLE">
+      <generalization xmi:type="uml:Generalization" xmi:id="_XE6lwMi0Ee23GaPM8t9ccA" general="_9-g8ELgrEe2ZiurUVz4WtA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Model" xmi:id="_Uhd1wMitEe23GaPM8t9ccA" name="information">
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZRMUQMitEe23GaPM8t9ccA" name="Wahrnehmen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cKxJcMitEe23GaPM8t9ccA" name="Suchen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dtXkoMitEe23GaPM8t9ccA" name="Aufzeichen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_faFlIMitEe23GaPM8t9ccA" name="Präsentieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hc6YgMitEe23GaPM8t9ccA" name="Kommentieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_lDonkMitEe23GaPM8t9ccA" name="Abfragen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nUpn8MitEe23GaPM8t9ccA" name="Entdecken"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pzCV8MitEe23GaPM8t9ccA" name="Lokalisieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rhBhwMitEe23GaPM8t9ccA" name="Identifizieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uY2DcMitEe23GaPM8t9ccA" name="Vergleichen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xi6ywMitEe23GaPM8t9ccA" name="Generieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0299cMitEe23GaPM8t9ccA" name="Durchsuchen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_36YrIMitEe23GaPM8t9ccA" name="Auswählen"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6aoaUMitEe23GaPM8t9ccA" name="Kodieren"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_A53uoMiuEe23GaPM8t9ccA" name="Verbrauchen"/>
+  </packagedElement>
+</uml:Model>

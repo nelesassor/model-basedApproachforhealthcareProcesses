@@ -1,0 +1,141 @@
+<ns0:definitions xmlns:ns0="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:ns1="http://camunda.org/schema/modeler/1.0" xmlns:ns2="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:ns3="http://www.omg.org/spec/DD/20100524/DC" xmlns:ns4="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_048cyq5" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.13.0" ns1:executionPlatform="Camunda Platform" ns1:executionPlatformVersion="7.19.0">
+  <ns0:collaboration id="Collaboration_0m84nkn">
+    <ns0:participant id="Participant_0vvndr1" name="ProHerzDataSharing" processRef="Process_1p65blv" />
+  </ns0:collaboration>
+  <ns0:process id="Process_1p65blv" isExecutable="true">
+    <ns0:laneSet id="LaneSet_1jphw6a">
+      <ns0:lane id="Lane_12tug1j" name="Patient :: (Participant)">
+        <ns0:flowNodeRef>Event_1917wja</ns0:flowNodeRef>
+        <ns0:flowNodeRef>Activity_1s609j8</ns0:flowNodeRef>
+        <ns0:flowNodeRef>Activity_04eqqyi</ns0:flowNodeRef>
+        <ns0:flowNodeRef>Activity_0ahtsw3</ns0:flowNodeRef>
+        <ns0:flowNodeRef>Activity_1i4251o</ns0:flowNodeRef>
+      </ns0:lane>
+      <ns0:lane id="Lane_0yo56p8" name="Server :: (Communication-digital)">
+        <ns0:flowNodeRef>Activity_0909e7t</ns0:flowNodeRef>
+      </ns0:lane>
+      <ns0:lane id="Lane_1mgg6w7" name="Doctor :: (Participant)">
+        <ns0:flowNodeRef>Activity_0v9e00w</ns0:flowNodeRef>
+        <ns0:flowNodeRef>Event_045ks6f</ns0:flowNodeRef>
+      </ns0:lane>
+    </ns0:laneSet>
+    <ns0:startEvent id="Event_1917wja" name="Wants to share medical data :: (Data)">
+      <ns0:outgoing>Flow_0xoq5gs</ns0:outgoing>
+    </ns0:startEvent>
+    <ns0:task id="Activity_1s609j8" name="enter :: (Task) and update contact information">
+      <ns0:incoming>Flow_0xoq5gs</ns0:incoming>
+      <ns0:outgoing>Flow_1adx6q9</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_04eqqyi" name="specify contact type">
+      <ns0:incoming>Flow_1adx6q9</ns0:incoming>
+      <ns0:outgoing>Flow_1vtduvs</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_0ahtsw3" name="select health data :: (Data)">
+      <ns0:incoming>Flow_1vtduvs</ns0:incoming>
+      <ns0:outgoing>Flow_0kc0kfs</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_1i4251o" name="confirm data :: (Data) sharing">
+      <ns0:incoming>Flow_0kc0kfs</ns0:incoming>
+      <ns0:outgoing>Flow_09cvaei</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_0909e7t" name="send :: (Task) data :: (Data) to contact">
+      <ns0:incoming>Flow_09cvaei</ns0:incoming>
+      <ns0:outgoing>Flow_18zslv7</ns0:outgoing>
+    </ns0:task>
+    <ns0:task id="Activity_0v9e00w" name="receive data :: (Data)">
+      <ns0:incoming>Flow_18zslv7</ns0:incoming>
+      <ns0:outgoing>Flow_1pogb0t</ns0:outgoing>
+    </ns0:task>
+    <ns0:endEvent id="Event_045ks6f">
+      <ns0:incoming>Flow_1pogb0t</ns0:incoming>
+    </ns0:endEvent>
+    <ns0:sequenceFlow id="Flow_0xoq5gs" sourceRef="Event_1917wja" targetRef="Activity_1s609j8" />
+    <ns0:sequenceFlow id="Flow_1adx6q9" sourceRef="Activity_1s609j8" targetRef="Activity_04eqqyi" />
+    <ns0:sequenceFlow id="Flow_1vtduvs" sourceRef="Activity_04eqqyi" targetRef="Activity_0ahtsw3" />
+    <ns0:sequenceFlow id="Flow_0kc0kfs" sourceRef="Activity_0ahtsw3" targetRef="Activity_1i4251o" />
+    <ns0:sequenceFlow id="Flow_09cvaei" sourceRef="Activity_1i4251o" targetRef="Activity_0909e7t" />
+    <ns0:sequenceFlow id="Flow_18zslv7" sourceRef="Activity_0909e7t" targetRef="Activity_0v9e00w" />
+    <ns0:sequenceFlow id="Flow_1pogb0t" sourceRef="Activity_0v9e00w" targetRef="Event_045ks6f" />
+  </ns0:process>
+  <ns2:BPMNDiagram id="BPMNDiagram_1">
+    <ns2:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0m84nkn">
+      <ns2:BPMNShape id="Participant_0vvndr1_di" bpmnElement="Participant_0vvndr1" isHorizontal="true">
+        <ns3:Bounds x="180" y="80" width="958" height="610" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Lane_12tug1j_di" bpmnElement="Lane_12tug1j" isHorizontal="true">
+        <ns3:Bounds x="210" y="80" width="928" height="310" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Lane_0yo56p8_di" bpmnElement="Lane_0yo56p8" isHorizontal="true">
+        <ns3:Bounds x="210" y="390" width="928" height="180" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Lane_1mgg6w7_di" bpmnElement="Lane_1mgg6w7" isHorizontal="true">
+        <ns3:Bounds x="210" y="570" width="928" height="120" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Event_1917wja_di" bpmnElement="Event_1917wja">
+        <ns3:Bounds x="282" y="182" width="36" height="36" />
+        <ns2:BPMNLabel>
+          <ns3:Bounds x="263" y="225" width="74" height="27" />
+        </ns2:BPMNLabel>
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_1s609j8_di" bpmnElement="Activity_1s609j8">
+        <ns3:Bounds x="370" y="160" width="100" height="80" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_04eqqyi_di" bpmnElement="Activity_04eqqyi">
+        <ns3:Bounds x="530" y="160" width="100" height="80" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_0ahtsw3_di" bpmnElement="Activity_0ahtsw3">
+        <ns3:Bounds x="690" y="160" width="100" height="80" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_1i4251o_di" bpmnElement="Activity_1i4251o">
+        <ns3:Bounds x="850" y="160" width="100" height="80" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_0909e7t_di" bpmnElement="Activity_0909e7t">
+        <ns3:Bounds x="850" y="470" width="100" height="80" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Activity_0v9e00w_di" bpmnElement="Activity_0v9e00w">
+        <ns3:Bounds x="850" y="600" width="100" height="80" />
+        <ns2:BPMNLabel />
+      </ns2:BPMNShape>
+      <ns2:BPMNShape id="Event_045ks6f_di" bpmnElement="Event_045ks6f">
+        <ns3:Bounds x="1002" y="622" width="36" height="36" />
+      </ns2:BPMNShape>
+      <ns2:BPMNEdge id="Flow_0xoq5gs_di" bpmnElement="Flow_0xoq5gs">
+        <ns4:waypoint x="318" y="200" />
+        <ns4:waypoint x="370" y="200" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_1adx6q9_di" bpmnElement="Flow_1adx6q9">
+        <ns4:waypoint x="470" y="200" />
+        <ns4:waypoint x="530" y="200" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_1vtduvs_di" bpmnElement="Flow_1vtduvs">
+        <ns4:waypoint x="630" y="200" />
+        <ns4:waypoint x="690" y="200" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_0kc0kfs_di" bpmnElement="Flow_0kc0kfs">
+        <ns4:waypoint x="790" y="200" />
+        <ns4:waypoint x="850" y="200" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_09cvaei_di" bpmnElement="Flow_09cvaei">
+        <ns4:waypoint x="900" y="240" />
+        <ns4:waypoint x="900" y="470" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_18zslv7_di" bpmnElement="Flow_18zslv7">
+        <ns4:waypoint x="900" y="550" />
+        <ns4:waypoint x="900" y="600" />
+      </ns2:BPMNEdge>
+      <ns2:BPMNEdge id="Flow_1pogb0t_di" bpmnElement="Flow_1pogb0t">
+        <ns4:waypoint x="950" y="640" />
+        <ns4:waypoint x="1002" y="640" />
+      </ns2:BPMNEdge>
+    </ns2:BPMNPlane>
+  </ns2:BPMNDiagram>
+</ns0:definitions>
